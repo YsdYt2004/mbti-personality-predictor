@@ -1,32 +1,34 @@
-# MBTI Personality Analyzer 🧠
+# MBTI Personality Predictor 🧠✨
 
-このプロジェクトは、MBTI（16パーソナリティーズ）の分類を目的とした自然言語処理プロジェクトです。
+このアプリは、ユーザーが入力した文章から16タイプのMBTI性格タイプを予測するアプリです。
 
-## 使用技術
+## 💡 機能
+
+- 自然言語処理（NLP）による前処理
+- TF-IDF による特徴量抽出
+- SVMモデルによる予測
+- StreamlitによるWebアプリ化
+
+## 🚀 使用技術
 
 - Python
-- NLP (TF-IDF / Word2Vec)
-- 機械学習 (SVM)
-- Webアプリ (Streamlit)
+- scikit-learn
+- NLTK
+- Streamlit
 
-## 実行方法
+## 🛠️ セットアップ方法
 
 ```bash
-streamlit run App.py
+git clone https://github.com/your-username/repo-name.git
+cd repo-name
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 
+# モデルの構築
+PYTHONPATH=. python src/Data_Preprocessing.py
+PYTHONPATH=. python src/TF_IDF.py
+PYTHONPATH=. python src/SVM.py
 
---説明書--
-
-# 1. 前処理
-python src/Data_Preprocessing.py
-
-# 2. 特徴量抽出
-python src/TF_IDF.py     # または Word2Vec.py
-
-# 3. モデル学習
-python src/SVM.py
-
-
-# 4. Webアプリ起動
-仮想起動 source venv/bin/activate
+# Webアプリ起動
 streamlit run App.py
