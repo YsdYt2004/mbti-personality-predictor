@@ -1,0 +1,17 @@
+# 仮想環境
+venv/
+
+# モデル・ログなどの生成物
+models/
+logs/
+__pycache__/
+
+# データファイル（必要なら）
+data/mbti_1.csv
+data/mbti_cleaned.csv
+data/tfidf_features.*
+data/labels.csv
+
+# OSごとの不要ファイル
+.DS_Store
+Thumbs.db

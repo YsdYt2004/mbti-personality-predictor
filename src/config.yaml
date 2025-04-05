@@ -1,0 +1,18 @@
+# src/config.yaml
+
+preprocessing:
+  stopwords: "english"
+  lowercase: true
+
+tfidf:
+  max_features: 5000
+
+word2vec:
+  vector_size: 100
+  window: 5
+  min_count: 2
+  workers: 4
+
+svm:
+  test_size: 0.2
+  random_state: 42
